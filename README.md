@@ -49,9 +49,9 @@ Follow these steps to run the project locally.
 ```bash
 git clone https://github.com/<your-username>/ml-catdog-app.git
 cd ml-catdog-app
+```
 
-
-## 2. 🐍 (Optional) Create a Virtual Environment
+## 2. Create a Virtual Environment
 
 > ⚠️ This step is optional but **highly recommended** to keep your project dependencies isolated.
 
@@ -63,23 +63,28 @@ python -m venv venv
 
 # 2️⃣ Activate the virtual environment
 source venv/bin/activate
+```
 
-3. Install dependencies
+## 3. Install dependencies
 pip install -r requirements.txt
 
 This will install FastAPI, TensorFlow, Pillow, NumPy, and other required packages.
 
-4. Train the model (optional if model.h5 exists)
+## 4. Train the model (optional if model.h5 exists)
+
+```bash
 python model/train.py
+```
 
 Run this step only if you want to train a new model. If model/model.h5 already exists, you can skip this step.
 
-5. Start the FastAPI service
+## 5. Start the FastAPI service
+```bash
 uvicorn api.main:app --reload
-
+```
 The server will start at http://127.0.0.1:8000.
 
-6. Open the web page
+## 6. Open the web page
 
 Visit the following URL in your browser:
 
