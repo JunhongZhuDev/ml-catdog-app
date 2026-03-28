@@ -46,7 +46,7 @@ ml-catdog-app/
 git clone https://github.com/<your-username>/ml-catdog-app.git
 cd ml-catdog-app
 
-# Linux/macOS
+## Linux/macOS
 python -m venv venv
 source venv/bin/activate
 
