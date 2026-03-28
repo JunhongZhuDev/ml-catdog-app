@@ -9,7 +9,8 @@ The project includes **model training, API backend, and frontend web interface**
 
 ## Project Structure
 
-```ml-catdog-app/
+```
+ml-catdog-app/
 │
 ├── data/                # Dataset
 ├── model/
