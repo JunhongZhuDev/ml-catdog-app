@@ -42,6 +42,19 @@ ml-catdog-app/
 
 ### 1. Clone the repository
 
+## Quick Start (Local)
+
+### 2. (Optional) Create a virtual environment
+
+```bash
+# Linux/macOS
+python -m venv venv
+source venv/bin/activate
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
 ```bash
 git clone https://github.com/<your-username>/ml-catdog-app.git
 cd ml-catdog-app
