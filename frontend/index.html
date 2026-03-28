@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cat vs Dog Classifier</title>
+</head>
+
+<body>
+  <h2>🐱🐶 猫狗分类器</h2>
+
+  <input type="file" id="fileInput" />
+  <br><br>
+
+  <button onclick="upload()">预测</button>
+
+  <p id="result"></p>
+
+<script>
+async function upload() {
+  const file = document.getElementById('fileInput').files[0];
+
+  if (!file) {
+    alert("请先选择图片");
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const res = await fetch("http://127.0.0.1:8000/predict", {
+    method: "POST",
+    body: formData
+  });
+
+  const data = await res.json();
+
+  document.getElementById("result").innerText =
+    "预测结果: " + data.prediction +
+    " | 置信度: " + data.confidence.toFixed(3);
+}
+</script>
+
+</body>
+</html>
