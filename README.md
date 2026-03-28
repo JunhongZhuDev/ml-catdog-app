@@ -50,20 +50,19 @@ Follow these steps to run the project locally.
 git clone https://github.com/<your-username>/ml-catdog-app.git
 cd ml-catdog-app
 
-`### Step X
-### 2. (Optional) Create a virtual environment
 
-Linux/macOS:
+## 2. 🐍 (Optional) Create a Virtual Environment
 
+> ⚠️ This step is optional but **highly recommended** to keep your project dependencies isolated.
+
+### 💻 Linux / macOS
+
+```bash
+# 1️⃣ Create a virtual environment named 'venv'
 python -m venv venv
+
+# 2️⃣ Activate the virtual environment
 source venv/bin/activate
-
-Windows:
-
-python -m venv venv
-venv\Scripts\activate
-
-This step is optional but recommended to keep dependencies isolated.
 
 3. Install dependencies
 pip install -r requirements.txt
