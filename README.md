@@ -56,7 +56,7 @@ cd ml-catdog-app
 
 > ⚠️ This step is optional but **highly recommended** to keep your project dependencies isolated.
 
-### 💻 Linux / macOS
+### Linux / macOS
 
 ```bash
 # 1️⃣ Create a virtual environment named 'venv'
