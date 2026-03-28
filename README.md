@@ -40,35 +40,50 @@ ml-catdog-app/
 
 ## Quick Start (Local)
 
+Follow these steps to run the project locally.
+
+---
+
 ### 1. Clone the repository
-
-## Quick Start (Local)
-
-### 2. (Optional) Create a virtual environment
-
-```bash
-# Linux/macOS
-python -m venv venv
-source venv/bin/activate
-
-# Windows
-python -m venv venv
-venv\Scripts\activate
 
 ```bash
 git clone https://github.com/<your-username>/ml-catdog-app.git
 cd ml-catdog-app
 
-## Linux/macOS
+2. (Optional) Create a virtual environment
+
+Linux/macOS:
+
 python -m venv venv
 source venv/bin/activate
 
-# Windows
+Windows:
+
 python -m venv venv
 venv\Scripts\activate
 
+This step is optional but recommended to keep dependencies isolated.
+
+3. Install dependencies
 pip install -r requirements.txt
 
+This will install FastAPI, TensorFlow, Pillow, NumPy, and other required packages.
+
+4. Train the model (optional if model.h5 exists)
+python model/train.py
+
+Run this step only if you want to train a new model. If model/model.h5 already exists, you can skip this step.
+
+5. Start the FastAPI service
 uvicorn api.main:app --reload
 
+The server will start at http://127.0.0.1:8000.
+
+6. Open the web page
+
+Visit the following URL in your browser:
+
 http://127.0.0.1:8000/web
+
+Upload an image → Click Predict → The prediction result will appear on the page.
+
