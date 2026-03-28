@@ -50,6 +50,7 @@ Follow these steps to run the project locally.
 git clone https://github.com/<your-username>/ml-catdog-app.git
 cd ml-catdog-app
 
+`### Step X
 ### 2. (Optional) Create a virtual environment
 
 Linux/macOS:
