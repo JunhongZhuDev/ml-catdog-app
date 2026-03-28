@@ -9,7 +9,7 @@ The project includes **model training, API backend, and frontend web interface**
 
 ## Project Structure
 
-ml-catdog-app/
+```ml-catdog-app/
 │
 ├── data/                # Dataset
 ├── model/
@@ -25,7 +25,7 @@ ml-catdog-app/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
@@ -66,7 +66,10 @@ source venv/bin/activate
 ```
 
 ## 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
 This will install FastAPI, TensorFlow, Pillow, NumPy, and other required packages.
 
