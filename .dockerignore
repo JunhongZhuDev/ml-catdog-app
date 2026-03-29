@@ -1,0 +1,20 @@
+# Python 缓存文件
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code 配置
+.vscode
+
+# Git 目录
+.git
+
+# 环境文件 / 私密信息
+.env
+
+# 数据集（如果不想打包到镜像）
+data/
+
+# Docker 构建生成文件
+*.log
